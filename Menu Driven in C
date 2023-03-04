@@ -1,0 +1,90 @@
+#include<stdio.h>
+int a,b,sum,multi,subtract,division;
+
+int add()
+{
+    printf("Enter the number 1:- \n");    
+    scanf("%d",&a);
+    printf("Enter the number 2:- \n");
+    scanf("%d",&b);
+    sum = a+b;
+    printf("Sum = %d",sum);
+    printf("\n");
+}
+
+int mul()
+{
+    printf("Enter the number 1:- \n");    
+    scanf("%d",&a);
+    printf("Enter the number 2:- \n");
+    scanf("%d",&b);
+    multi = a*b;
+    printf("Multipication = %d",multi);
+    printf("\n");
+}
+
+int sub()
+{
+    printf("Enter the number 1:- \n");    
+    scanf("%d",&a);
+    printf("Enter the number 2:- \n");
+    scanf("%d",&b);
+    subtract = a-b;
+    printf("Substraction = %d",subtract);
+    printf("\n");
+}
+
+int divi()
+{
+    printf("Enter the number 1:- \n");    
+    scanf("%d",&a);
+    printf("Enter the number 2:- \n");
+    scanf("%d",&b);
+    division = a/b;
+    printf("Division = %d",division);
+    printf("\n");
+}
+
+int main()
+{
+    
+    int choice;
+    do
+    {
+        printf("\n");
+        printf("*--------Menu---------*\n");
+        printf("Enter the choice:-\n");
+        printf("1.Addition\n2.Multiplication\n3.Substraction\n4.Division\n5.Exit\n");
+        printf("\nEnter the choice = \n");
+        scanf("%d",&choice);
+        
+        switch(choice)
+        {
+            case 1 : 
+            add();
+            break;
+            
+            case 2:
+            mul();
+            break;
+            
+            case 3:
+            sub();
+            break;
+            
+            case 4:
+            divi();
+            break;
+            
+            case 5:
+            printf("Exit.\nThank you!!!!!!");
+            break;
+            
+            default:
+            printf("Worng Input!!!!!");
+            printf("\n");
+            break;
+        }
+        
+    }while(choice != 5);
+}
